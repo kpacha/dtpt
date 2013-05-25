@@ -1,0 +1,17 @@
+{% extends "layout.twig" %}
+
+{% block title %}Sesiones{% endblock %}
+
+{% block content %}
+    <h2>Sesiones</h2>
+    {% for aggregate in data %}
+    <h4>Sesión #{{ aggregate._id }}</h4>
+    <ul>
+        <li>Total votaciones: {{ aggregate.total }}</li>
+        <li>Asistencia media: {{ aggregate.presents }}</li>
+        <li>Media ausentes: {{ aggregate.notPresents }}</li>
+        <li>Asistencia máxima: {{ aggregate.maxPresents }}</li>
+        <li>Asistencia minima: {{ aggregate.minPresents }}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}

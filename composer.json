@@ -1,0 +1,21 @@
+{
+    "name": "kpacha/dtpt",
+    "description": "Deberían Trabajar Para Tí",
+    "require": {
+        "php"                   : ">=5.3.3",
+        "silex/silex"           : "1.1.*@dev",
+        "symfony/twig-bridge"   : "~2.2",
+        "twig/twig"             : "~1.10"
+    },
+    "require-dev": {
+        "symfony/debug"         : "2.3.*@dev",
+        "mockery/mockery"       : "dev-master@dev"
+    },
+    "minimum-stability"         : "dev",
+    "autoload": {
+        "psr-0": {
+            "App"               : "src/",
+            "Test"              : "src/"
+        }
+    }
+}

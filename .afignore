@@ -1,0 +1,8 @@
+*~
+composer*
+.git
+nbproject/
+*.md
+phpunit*
+report/
+web/updater*

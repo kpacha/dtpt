@@ -1,0 +1,19 @@
+{% extends "layout.twig" %}
+
+{% block title %}Resumen sesiones{% endblock %}
+
+{% block content %}
+    <h2>Resumen sesiones</h2>
+    {% for aggregate in data %}
+    <ul>
+        <li>Total sesiones: {{ aggregate.sessions }}</li>
+        <li>Total votaciones: {{ aggregate.total }}</li>
+        <li>Asistencia media: {{ aggregate.presents }}</li>
+        <li>Media ausentes: {{ aggregate.notPresents }}</li>
+        <li>Asistencia máxima: {{ aggregate.maxPresents }}</li>
+        <li>Asistencia minima: {{ aggregate.minPresents }}</li>
+        <li>Asistencia máxima diaria media: {{ aggregate.avgMaxPresents }}</li>
+        <li>Asistencia mínima diaria media: {{ aggregate.avgMinPresents }}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}
